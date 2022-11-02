@@ -1,0 +1,1439 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    background: url(https://usebootstrap.com/preview-no-frame/food-funday/images/banner.jpg) no-repeat center top;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.scrolll {
+    width: 100%;
+    background-color: none;
+    transition: 0.5s;
+}
+
+.scroled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #202020;
+    transition: 0.5s;
+    padding: 10px 0 0 0;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+}
+
+li a {
+    color: #fff !important;
+    margin: 0 14px;
+    font-size: 14px !important;
+    font-family: 'Roboto', sans-serif !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+    position: relative !important;
+    font-weight: 500 !important;
+    letter-spacing: 1.6px;
+}
+
+ul li a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+.active2 {
+    color: #e75b1e !important;
+}
+
+.active2::after {
+    content: "";
+    height: 3px;
+    width: 66%;
+    background: #e75b1e;
+    position: absolute;
+    left: 20%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.text {
+    text-align: center;
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.text h1 {
+    font-family: 'Nautilus Pompilius', sans-serif;
+    position: relative;
+    display: inline-block;
+    font-size: 70px;
+    color: #fff;
+    padding-bottom: 0px;
+    padding-top: 100px;
+}
+
+.text h2 {
+    font-family: 'Nautilus Pompilius', sans-serif;
+    position: relative;
+    font-size: 37px;
+    color: #e75b1e;
+}
+
+.text p {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: rgb(204, 204, 204);
+    padding-bottom: 35px;
+    margin: 0px;
+}
+
+.book-btn a {
+    color: rgb(255, 255, 255);
+    min-width: 219px;
+    padding: 10.5px 20px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    background: rgb(231, 91, 30);
+    border: 3px solid rgb(231, 91, 30);
+    text-decoration: none
+}
+
+.book-btn a:hover {
+    border-bottom: 3px solid rgb(240, 73, 0);
+    background: none;
+}
+
+;
+a {
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.mouse {
+    width: calc(16px * 4);
+    height: calc(31px * 4);
+    margin: 70px auto 0px;
+    background: none;
+    border: 2px solid white;
+    border-radius: calc(16px * 4);
+    position: relative;
+}
+
+.typer {
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-size: 70px;
+    color: #e75b1e;
+}
+
+.divv {
+    width: 15px;
+    height: 15px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 7px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    opacity: 0;
+    animation: topp 1.5s infinite ease-in-out;
+}
+
+@keyframes topp {
+    25% {
+        opacity: 20;
+        top: 10%;
+    }
+    30% {
+        opacity: 40;
+        top: 20%;
+    }
+    65% {
+        opacity: 0;
+        top: 30%;
+    }
+    85% {
+        opacity: 0;
+        top: 40%;
+    }
+    100% {
+        opacity: 0;
+        top: 50%;
+    }
+}
+.activee{
+    opacity: 1 !important;
+    transition: 0.4s linear !important;
+
+}
+.about {
+    width: 100%;
+    height: auto;
+    background: #E6E6E6;
+    opacity: 0;
+}
+
+.about h2 {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #e75b1e;
+}
+
+.about h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.about p {
+    margin: 0 0 10px;
+    color: #686868;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.80857;
+}
+
+.about img {
+    border: 10px solid #f1f1f1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1030px) {
+    header {
+        height: auto !important;
+    }
+}
+
+.imgclass {
+    position: relative;
+}
+
+.img2 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+}
+
+.about2 {
+    background: url(https://usebootstrap.com/preview-no-frame/food-funday/images/special_menu_bg.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    opacity: 0;
+}
+
+.about2:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about2 h5 {
+    letter-spacing: 0.16px;
+    padding: 20px 20px;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+.special-box {
+    margin-top: 50px;
+}
+
+.about2 h2 {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #e75b1e;
+    position: relative;
+}
+
+@media only screen and (max-width: 1050px) {
+    li a {
+        color: #fff !important;
+        margin: 0 !important;
+        font-size: 14px !important;
+        font-family: 'Roboto', sans-serif !important;
+        text-transform: uppercase !important;
+        display: inline-block !important;
+        position: relative !important;
+        font-weight: 500 !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+.blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -40px;
+}
+
+
+/* The colour of the indicators */
+
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+    background: #707070;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: -3rem !important;
+    margin-left: 0 !important;
+    list-style: none;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+    margin-left: 100px !important;
+}
+
+.aa {
+    position: relative;
+}
+
+.hoverdiv {
+    width: 100%;
+    height: 100%;
+    background-color: #e75b1e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: none;
+    background: url(https://usebootstrap.com/preview-no-frame/food-funday/images/icon_top.png) no-repeat;
+}
+
+.scrollupp {
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: inline;
+    background: url(https://usebootstrap.com/preview-no-frame/food-funday/images/icon_top.png) no-repeat;
+    z-index: 999;
+}
+
+.menu {
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    opacity: 0;
+}
+
+.menu h2 {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #e75b1e;
+    position: relative;
+}
+
+.menu p {
+    margin: 0 0 10px;
+    color: #686868;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.80857;
+}
+
+
+/* menu list */
+
+.menulist {
+    width: 100%;
+    height: auto;
+}
+
+.menulisthead {
+    width: 90%;
+    height: auto;
+    margin: 20px 5% 0;
+    text-align: center;
+}
+
+.menulisthead h2 {
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.menulisthead p {
+    width: 60%;
+    margin: auto;
+}
+
+.listitem {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5% 0;
+    box-shadow: 0 0 8px 5px rgb(0 0 0 / 5%);
+    list-style: none;
+    padding: 0;
+}
+
+.listelement {
+    width: 25%;
+    height: 120px;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #cccccc;
+}
+
+.listelement p {
+    width: 55%;
+    margin: 10px 22.5%;
+    border-bottom: 2px solid;
+    font-size: 20px;
+    text-align: center;
+}
+
+.listitem_1 {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+    margin-left: 5%;
+    padding-top: 25px;
+    box-shadow: 0 0 8px 5px rgb(0 0 0 / 5%);
+}
+
+.iteams {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.iteams img {
+    width: 92px;
+    height: 92px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.iteams div {
+    width: 55%;
+    padding-left: 20px;
+}
+
+.iteams div h3 {
+    color: #e75b1e;
+    font-size: 20px;
+    margin: 9px 0 0px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.iteams .offer-price {
+    width: 92px;
+    height: 92px;
+    color: #000;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    border: 1px solid #e75b1e;
+    border-radius: 50%;
+}
+
+.iteams p {
+    color: #6b6b6b;
+}
+
+.actived1 {
+    background-color: #e75b1e;
+    color: #fff;
+}
+
+#listiteam2 {
+    display: none;
+}
+
+#listiteam3 {
+    display: none;
+}
+
+#listiteam4 {
+    display: none;
+}
+
+.team {
+    width: 100%;
+    height: auto;
+    background: url(https://usebootstrap.com/preview-no-frame/food-funday/images/team_bg.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    text-align: center !important;
+    background-position: center 12px;
+    opacity: 0;
+}
+
+.team:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.team h2 {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.team p {
+    margin: 0 0 10px;
+    color: #fff !important;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.80857;
+    position: relative;
+}
+
+.thumb {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+.text-col {
+    float: left;
+    width: 100%;
+    padding: 25px 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    position: relative;
+}
+
+.thumb a img {
+    width: 100%;
+}
+
+.text-col h3 {
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-size: 28px;
+}
+
+.text-col p {
+    color: #000 !important;
+}
+
+.sf-team:hover .text-col {
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    background-color: #e75b1e;
+}
+
+.sf-team:hover .thumb img {
+    opacity: 0.6;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+.teamtext {
+    display: flex;
+    width: 90%;
+    margin: 20px 5% 0;
+    text-align: center;
+}
+
+.team-social {
+    display: block !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 20px 0 0 0 !important;
+    list-style: none !important;
+    border-top: 1px solid !important;
+}
+
+.team-social .teamli {
+    display: inline-block !important;
+    padding: 0 4px !important;
+}
+
+.team-social .teamli a {
+    width: 34px !important;
+    height: 34px !important;
+    text-align: center !important;
+    line-height: 32px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 100% !important;
+    color: #222 !important;
+    font-size: 16px !important;
+    display: block !important;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.team-social .teamli a:hover::after {
+    width: 0%;
+}
+
+.galery {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+}
+
+.galery h2 {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #e75b1e;
+}
+
+.galery p {
+    margin: 0 0 10px;
+    color: #000 !important;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.80857;
+}
+
+.gal-item {
+    overflow: hidden;
+    padding: 3px;
+    position: relative;
+}
+
+.gal-item .hover1 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover1 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .hover3 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover3 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .box {
+    height: 350px;
+    overflow: hidden;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+@media only screen and (max-width: 1310px) {
+    li a {
+        margin: 0 !important;
+    }
+}
+
+.aa .hover2 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75b1e;
+    transition: linear 0.3s;
+    opacity: 0;
+}
+
+.aa:hover .hover2 {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/* ////////////// */
+
+.blog {
+    width: 100%;
+    height: auto;
+    background: url(https://usebootstrap.com/preview-no-frame/food-funday/images/blog_bg.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+}
+
+.boxblog p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.boxblog h2 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px 30px 13px 30px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.boxblog h5 {
+    font-size: 11px;
+    color: #ccc;
+}
+
+.boxblog {
+    background: #FFF;
+    overflow: auto;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.blog-dit {
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    padding: 65px 2% 0 2%;
+}
+
+.blog-img-box {
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+.blog-img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog .h22 {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.blog-img-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 0;
+    transition: .3s all;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay i {
+    margin-top: 42%;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.blog-img-box:hover .overlay {
+    opacity: 1;
+}
+
+.blog-img-box:hover img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.pricing {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+}
+
+.pricing h2 {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #e75b1e;
+}
+
+.pricing p {
+    margin: 0 0 10px;
+    color: #000 !important;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.80857;
+}
+
+.pricingg {
+    border: 2px solid #e75b1e;
+    transition: all .3s ease-in-out;
+}
+
+.pricinghead {
+    background: #e75b1e;
+}
+
+.pricinghead h3 {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+.pricingbody {
+    background-color: #f0f0f0;
+    font-size: 40px;
+    color: #777777;
+    padding: 20px;
+    margin: 0px;
+}
+
+.pricingbody p strong {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 42px;
+}
+
+.pricingbody p strong span {
+    color: #e75b1e;
+}
+
+.list-group-item {
+    color: #202020;
+    border-bottom: 2px solid rgba(212, 209, 209, 0.8);
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 15px;
+}
+
+.pricingfooter {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.pricingfooter a {
+    background: #e75b1e;
+    border: 3px solid #e75b1e;
+    color: #fff;
+}
+
+.pricingfooter a:hover {
+    background: #fff !important;
+}
+
+.pricingg:hover {
+    margin-top: -8px;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 20%)
+}
+.reservations{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+}
+.block-title {
+    font-size: 52px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    font-weight: bold;
+    color: #e75b1e;
+}
+.reservations  h4 {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding-top: 25px;
+}
+.reservations p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.form-box {
+    margin-bottom: 20px;
+    min-height: 53px;
+}
+.form-box input {
+    width: 100%;
+    border: 2px dotted #ccc;
+    background: #f5f5f5;
+    color: #202020;
+    padding: 12px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    opacity: 1;
+    min-height: 54px;
+}
+.btnn {
+    color: rgb(255, 255, 255);
+    min-width: 219px;
+    padding: 10.5px 20px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    background: rgb(231, 91, 30);
+    border: 3px solid rgb(231, 91, 30);
+    text-decoration: none;
+}
+.btnn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.foterreserv{
+    background-image: url(https://usebootstrap.com/preview-no-frame/food-funday/images/newsletter-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+}
+.foterreserv::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.foterreserv p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    position:relative;
+}
+.ft-title {
+    letter-spacing: 0.96px;
+    margin-bottom: 22px;
+    font-family: 'Nautilus Pompilius', sans-serif;
+    color: #fff;
+    font-size: 52px;
+}
+.foterreserv  form {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.foterreserv form input {
+    width: 100%;
+    border: 2px dotted #ccc;
+    background: #f5f5f5;
+    color: #202020;
+    padding: 12px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    opacity: 1;
+    min-height: 53px;
+}
+.foterreserv form a {
+    border: 2px dotted #ccc;
+    padding: 0px 19px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+    min-width: inherit;
+    height: 53px;
+    line-height: 51px;
+    color: #ffffff;
+    background-color: #e75b1e;
+}
+.footerr{
+    
+        background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(https://usebootstrap.com/preview-no-frame/food-funday/images/footer_background.jpg);
+        background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(https://usebootstrap.com/preview-no-frame/food-funday/images/footer_background.jpg);
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(https://usebootstrap.com/preview-no-frame/food-funday/images/footer_background.jpg);
+        background-color: #111;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+}
+.footer-box-a h3 {
+    font-size: 24px;
+    font-family:  'Nautilus Pompilius', sans-serif;
+    color: #e75b1e;
+}
+.footer-box-a p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    line-height: 25px;
+}
+.socials-box {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 1px 0px;
+    padding: 4px;
+}
+.footer-socials {
+    margin: 10px 0;
+    line-height: 30px;
+    padding-left: 68px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.socials-box li {
+    display: inline-block;
+    opacity: 1;
+    margin-right: 7px;
+}
+.footer-box .social-circle-border {
+    background-color: transparent;
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 2px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #6f6f6f;
+    text-align: center;
+}
+.socials-box li a:hover::after{
+width: 0%;
+}
+.footer-box-b h3 {
+    font-size: 24px;
+    font-family:  'Nautilus Pompilius', sans-serif;
+    color: #e75b1e;
+}
+.footer-box-b ul{
+    list-style: none;
+}
+.footer-box-b ul li {
+    line-height: 30px;
+    
+}
+.footer-box-b ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px !important;
+}
+.footer-box-b ul li a{
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.footer-box-b ul li a:hover {
+    padding-left: 5px !important;
+    color:#e75b1e  !important;
+}
+.footer-box-b ul li a:hover::after{
+    width: 0%;
+}
+.footer-box-c h3 {
+    font-size: 24px;
+    font-family:  'Nautilus Pompilius', sans-serif;
+    color: #e75b1e;
+}
+.footer-box-c p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+.footer-box-c p span {
+    display: table;
+    padding-left: 12px;
+    padding-top: 1px;
+}
+.footer-box-c p i {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    float: left;
+    min-width: 20px;
+    text-align: center;
+    color: #e75b1e;
+}
+.footer-box-c p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-box-c p a:hover {
+    color: #e75b1e;
+}
+.footer-box-d h3 {
+    font-size: 24px;
+    font-family:  'Nautilus Pompilius', sans-serif;
+    color: #e75b1e;
+}
+.footer-box-d ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.footer-box-d ul li {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 12px;
+}
+.footer-box-d ul li p {
+    padding: 0px;
+    margin: 0px;
+}
+.footer-box-d ul li span {
+    color: #666;
+}
+.copyright-main {
+    border-top: 2px dotted #fff;
+    text-align: center;
+    padding-top: 25px;
+  
+    padding-bottom: 25px;
+    background-color: #e75b1e;
+    width: 100%;
+}
+.copyright-main .copy-title {
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1;
+}
+
+.gal-item .hover4 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover4 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .hover5 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover5 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .hover6 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover6 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .hover7 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover7 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .hover8 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover8 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .hover9 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover9 {
+    opacity: 1;
+    cursor: pointer;
+}
+.gal-item .hover10 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e75a1eac;
+    transition: linear 0.3s;
+    opacity: 0;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gal-item:hover .hover10 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+    .about2{
+        display: none !important;
+    }
+  };
